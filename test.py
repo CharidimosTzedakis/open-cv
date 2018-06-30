@@ -1,3 +1,9 @@
+import sys
+print '\n'.join(sys.path)
+print '\n'.join(sys.modules)
+import backports
+print('Backports Path: {0}'.format(backports.__path__))
+
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt

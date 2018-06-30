@@ -1,6 +1,9 @@
 import cv2
 import numpy as np
 
+import sys
+print '\n'.join(sys.path)
+
 cap = cv2.VideoCapture(0)
 fourcc = cv2.VideoWriter_fourcc(*'X264')
 out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640,480))
